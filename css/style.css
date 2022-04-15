@@ -60,7 +60,7 @@
 }
 
 .logo {
-  font-family: 'Raleway';
+  font-family: 'Raleway', sans-serif;
   font-weight: 700;
   font-size: 26px;
   line-height: 1.19;
@@ -68,7 +68,7 @@
   color: var(--logo-color-blue);
 }
 
-.header-logo-span {
+.header-logo-studio {
   color: var(--logo-span-color);
 }
 
@@ -97,7 +97,13 @@
 .header-mail:hover,
 .header-tel:hover,
 .header-mail:focus,
-.header-tel:focus {
+.header-tel:focus,
+.address-mail:hover,
+.address-tel:hover,
+.address-mail:focus,
+.address-tel:focus,
+.address-link:hover,
+.address-link:focus {
   color: var(--header-link-hover);
 }
 
@@ -122,7 +128,7 @@
 }
 
 .hero-btn {
-  font-family: 'Roboto';
+  font-family: inherit;
   font-style: normal;
   font-weight: 700;
   font-size: 16px;
@@ -132,12 +138,13 @@
   letter-spacing: 0.06em;
   color: var(--hero-button-color);
   background-color: var(--hero-button-background-color);
+  border-color: var(--hero-button-background-color);
+  cursor: var(--cursor-button);
 }
 
 .hero-btn:hover,
 .hero-btn:focus {
   background: var(--hero-button-background-color-focus-hover);
-  cursor: var(--cursor-button);
 }
 
 /*-----------------------------------Qualities and Skills---------------------- */
@@ -219,7 +226,7 @@
   background-color: var(--logo-color-black);
 }
 
-.footer-logo-span {
+.footer-logo-studio {
   color: var(--logo-color-white);
 }
 
@@ -251,7 +258,7 @@
 ------------------------------------------------------------------------------ */
 
 .portfolio-btn {
-  font-family: 'Roboto';
+  font-family: inherit;
   font-style: normal;
   font-weight: 500;
   font-size: 16px;
@@ -260,6 +267,8 @@
   letter-spacing: 0.03em;
   color: var(--portfolio-btn-color);
   background-color: var(--portfolio-btn-background-color);
+  cursor: var(--cursor-button);
+  border-color: var(--portfolio-btn-background-color);
 }
 
 .portfolio-btn:hover,
@@ -267,7 +276,6 @@
 .painted {
   background-color: var(--portfolio-btn-hover-focus-background-color);
   color: var(--portfolio-btn-hover-focus-color);
-  cursor: var(--cursor-button);
 }
 
 .project-top-text {
@@ -285,5 +293,5 @@
 }
 
 .portfolio {
-  background-color: #ffffff;
+  background-color: var(--portfolio-background-color);
 }
