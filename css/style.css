@@ -384,6 +384,7 @@ img {
 .types-of-projects {
   padding-top: 94px;
   padding-bottom: 94px;
+  background-color: var(--portfolio-background-color);
 }
 .types-of-projects-item:not(:last-child) {
   margin-right: 8px;
@@ -416,7 +417,6 @@ img {
 .projects-list {
   display: flex;
   flex-wrap: wrap;
-  outline: 2px solid #666665;
 }
 
 .project-item:nth-child(3n + 3) {
@@ -430,11 +430,15 @@ img {
   display: block;
   margin-bottom: 30px;
   margin-right: 30px;
-  outline: 2px solid red;
+
 }
 
 .project-item-container {
   padding: 20px 24px;
+  border: 1px solid #EEEEEE;
+  box-sizing: border-box;
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
+
 }
 .project-top-text {
   margin-bottom: 4px;
@@ -447,10 +451,6 @@ img {
 .project-bottom-text {
   font-weight: 400;
   font-size: 16px;
-  line-height: 1.88px;
+  line-height: 1.87;
   letter-spacing: 0.03em;
-}
-
-.portfolio {
-  background-color: var(--portfolio-background-color);
 }
